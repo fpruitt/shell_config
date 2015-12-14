@@ -1,5 +1,5 @@
 #!/bin/zsh
-
+# Used to display a green dot on the shell if a network connection is available, used in .zshrc
 # Saved in ~/.zsh/online-check.sh and in a cron job as:
 # * * * * * ~/.zsh/online-check.sh
 

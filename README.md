@@ -5,12 +5,14 @@ This is a collection of scripts, utilities, and fonts I use to make my terminal 
 * Install iTerm
 https://www.iterm2.com/downloads.html
 * Add Solarize Dark theme as the default theme
-
+* Install powerline-safe fixed-width font (packaged is a nice one)
+` cp <repo_director>/fonts/*.otf /Library/Fonts/ `
+* Change ASCII and non-ascii fonts to one of the newly installed fonts
 * Install ZSH using brew, if you don't have it yet:
 ```
 brew install zsh
 ```
-Append the output of `which zsh` to the end of the file `/etc/shells/` (Or ensure a softlink exists at `/bin/zsh/` for wherever brew just put zsh)
+* Append the output of `which zsh` to the end of the file `/etc/shells/` (Or ensure a softlink exists at `/bin/zsh/` for wherever brew just put zsh)
 ```
 echo '$(which zsh)' >> /etc/shells
 ```
@@ -21,6 +23,15 @@ echo '$(which zsh)' >> /etc/shells
 cp <repo_directory>/fpruitt.zsh-theme ~/.oh-my-zsh/themes/
 
 * Replace/modify your current .zshrc with the contents of my .zshrc, modifying as you see fit
+
+* If you are using the online-checker script (enabled by default in my zshrc) then you will need to create a cronjob for it to run:
+```
+mkdir ~/.zsh
+cp <repo_directory>/.zsh/* ~/.zsh
+env EDITOR=vim crontab -e
+# Paste this in, then :wq 
+* * * * * ~/.zsh/online-check.sh
+```
 
 ## How to set up git config
 Replace info in gitconfig with your information, then:
