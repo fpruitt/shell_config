@@ -13,13 +13,13 @@ export PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 ### Node
-export NVM_DIR=~/.nvm
+export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #### ZSH + OhMyZSH
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/fpruitt1/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
