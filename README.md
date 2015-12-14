@@ -33,3 +33,12 @@ cat <repo_directory>/gitconfig >> ~/.gitconfig
 * Find '⌥  ->', double click on it, set the action as `Send Escape Sequence`, then set the code to `Esc+ b`
 * Repeat for `⌥ <-`, replacing the code with `Esc+ f`.
 * In the main Keys menu at the bottom, choose 'Left option key acts as `+Esc`', 'Right option key acts as `+Esc`', or both.
+
+## Notes
+* I like to set my cursor to a lighter color to contrast against the background. This isn't included in the theme. To do this, uncheck 'Smart cursor color' and choose a color value for 'Cursor' in iTerm2 Preference -> Color tab.
+* 
+
+## Credit
+* My zsh theme file is a slightly updated version of the files found at https://gist.github.com/remy/6079223#file-remy-zsh-theme, which is a modified version of the popular agnoster theme packaged with oh-my-zsh. 
+* The Solarize Dark theme packaged here can be found at https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
+* My gitconfig file comes from https://github.com/mrhwick/gitconfig . 
